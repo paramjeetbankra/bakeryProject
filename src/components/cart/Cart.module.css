@@ -1,0 +1,75 @@
+.cartWrapper {
+  padding: 40px;
+  min-height: 500px;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 40px;
+}
+.subTotal {
+  margin-bottom: 20px;
+}
+.subTotal > span {
+  font-size: 14px;
+  color: #888;
+  margin-right: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table thead > tr > th {
+  font-weight: normal;
+  font-size: 12px;
+  color: #888;
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+table tbody > tr > td {
+  padding: 10px 4px;
+  border-bottom: 1px solid #ddd;
+}
+
+.flexDiv {
+  display: flex;
+  align-items: center;
+}
+.itemImage {
+  width: 125px;
+  height: 125px;
+  background-size: cover;
+  background-position: 50%;
+  @media (max-width: 650px) {
+    width: 62px;
+    height: 62px;
+  }
+}
+
+.title {
+  margin-left: 30px;
+  @media (max-width: 650px) {
+    margin-left: 10px;
+  }
+}
+.name {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.name > a {
+  color: black;
+  text-decoration-color: #000;
+}
+.attr {
+  color: #888;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.remove {
+  font-size: 1.3rem;
+  cursor: pointer;
+}

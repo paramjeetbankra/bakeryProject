@@ -1,0 +1,23 @@
+.itemWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  width: 100%;
+}
+.imgWrapper {
+  padding: 20px;
+}
+.imgWrapper img {
+  width: 200px;
+  height: 200px;
+}
+.productDetails,
+.imgWrapper {
+  flex: 0 0 50%;
+  box-sizing: border-box;
+}
+
+.productDetails {
+  padding: 20px;
+  text-align: left;
+}
