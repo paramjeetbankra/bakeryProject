@@ -1,11 +1,19 @@
 import styles from "./Product.module.css";
 import { Link } from "react-router-dom";
 import Products from "./data";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AddMinusButton from "../Common/AddMinusButton";
 
 export default function ProductList(props) {
   const [selected, setSelected] = useState({});
+
+  useEffect(()=>{
+    let tmp = {};
+    props.cartProducts.forEach(element => {
+      tmp[element.name] = { selected: true, quantity: element.quantity }
+    });
+    setSelected(tmp);
+  }, [props.cartProducts])
 
   const addTocart = (event) => {
     let id = event.target.dataset.id;
