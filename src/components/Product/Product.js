@@ -7,7 +7,7 @@ export default function Product(props) {
     <PageWrapper>
       <div>
         <h2 className={styles.heading}>All Products</h2>
-        <ProductList cartProducts={props.cartProducts} />
+        <ProductList {...props} />
       </div>
     </PageWrapper>
   );
