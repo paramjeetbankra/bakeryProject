@@ -30,7 +30,6 @@
   height: 200px;
   background-size: cover;
   background-position: 50%;
-  background-image: url("../photos/images.jpeg");
   transform: translateY(85px);
 }
 .allProductWrapper {
