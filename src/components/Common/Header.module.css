@@ -19,7 +19,7 @@
 .buttons {
   color: rgb(240, 240, 240);
   position: absolute;
-  right: 0;
+  right: 20px;
 }
 .storeName {
   color: #ddd;
