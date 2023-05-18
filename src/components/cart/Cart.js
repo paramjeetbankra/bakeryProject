@@ -2,6 +2,7 @@ import styles from "./Cart.module.css";
 import PageWrapper from "../Common/PageWrapper";
 import CartTable from "./CartTable";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Cart(props) {
   let products = JSON.parse(localStorage.getItem("carts"));
@@ -77,9 +78,9 @@ export default function Cart(props) {
             items.length === 0 && (
               <p>
                 Hmmmmm, there's nothing in your cart yet. May I suggest the{" "}
-                {/* <Link to={"/product/hoodieReverse"} className="hoodieLink">
-                  Cool Hoodie
-                </Link> */}
+                <Link to={"/product"} className="hoodieLink">
+                  Products
+                </Link>
               </p>
             )
           }
