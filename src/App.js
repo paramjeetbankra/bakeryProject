@@ -64,7 +64,7 @@ export default function App() {
           <Route
             exact
             path="/product"
-            render={(props) => <Product cartProducts={products} />}
+            render={(props) => <Product cartProducts={products}  updateItemsInCache={updateItemsInCache}/>}
           />
           <Route
             exact
