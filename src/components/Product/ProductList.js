@@ -55,6 +55,7 @@ export default function ProductList(props) {
     <div className={styles.productList}>
       {Products.map((product, i) => {
         return (
+          <div key = {`product_{${i}}`}>
           <Link key={i} to={`/product/${product.url}`}>
             <div className={styles.imgWrapper}>
               <div
@@ -65,6 +66,7 @@ export default function ProductList(props) {
                 alt={product.name}
               />
             </div>
+            </Link>
             <div className={styles.title}>
               {product.name}
               <div className={styles.price}>Rs {product.sizes[0].price}</div>
@@ -83,7 +85,7 @@ export default function ProductList(props) {
                 />
               )}
             </div>
-          </Link>
+          </div>
         );
       })}
     </div>
