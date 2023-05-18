@@ -9,7 +9,8 @@ import Products from "./components/Product/data";
 import ProductItem from "./components/Product/ProductItem";
 
 export default function App() {
-  const items = JSON.parse(localStorage.getItem("carts"));
+  let items = JSON.parse(localStorage.getItem("carts"));
+  items = Array.isArray(items) ? items : []
   let quantity1 = items ? items.length : 0;
   const [quantity, setQuantity] = useState(quantity1);
   const [products, setProducts] = useState(items);
